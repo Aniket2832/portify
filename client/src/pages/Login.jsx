@@ -146,7 +146,7 @@ export default function Login() {
             <div style={{ flex: 1, height: 1, background: c.border }} />
           </div>
 
-          <a href={`${import.meta.env.VITE_API_URL || 'http://localhost:5000/api'}/auth/google`} style={{
+          <a href={(import.meta.env.VITE_API_URL || 'http://localhost:5000/api') + '/auth/google'} style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
             width: '100%', background: c.bgCard, border: '1px solid ' + c.borderStrong,
             borderRadius: 10, padding: '11px', fontSize: 14, fontWeight: 500, color: c.textMuted, textDecoration: 'none'
