@@ -8,6 +8,7 @@ const portfolioRoutes = require('./routes/portfolios');
 const publicRoutes = require('./routes/public');
 const aiRoutes = require('./routes/ai');
 const githubRoutes = require('./routes/github');
+const resumeRoutes = require('./routes/resume');
 
 const app = express();
 
@@ -21,5 +22,6 @@ app.use('/api/portfolios', portfolioRoutes);
 app.use('/api/public', publicRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/github', githubRoutes);
+app.use('/api/resume', resumeRoutes);
 
 module.exports = app;

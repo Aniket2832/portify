@@ -1,3 +1,4 @@
+import ResumeParser from '../components/editor/ResumeParser'
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from '@dnd-kit/core'
@@ -190,6 +191,7 @@ export default function Editor() {
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
         {/* LEFT SIDEBAR */}
         <div style={{ width: 220, background: c.bgSecondary, borderRight: '1px solid ' + c.border, padding: '16px 0', overflowY: 'auto' }}>
+            <ResumeParser />
           <TemplateSelector />
           <ColorPicker />
           <SlugEditor />
