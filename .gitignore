@@ -2,13 +2,19 @@
 node_modules/
 */node_modules/
 
-# Environment files
-.env.example
-*/.env.example
+# Environment files — never commit these
+.env
+*/.env
+**/.env
+
+# Keep .env.example but make sure it has no real values
+# .env.example is intentionally NOT ignored
 
 # Build output
 dist/
+*/dist/
 build/
+*/build/
 
 # OS files
 .DS_Store
