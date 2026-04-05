@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { transition: background 0.2s ease, color 0.2s ease; }
+input, textarea, button { transition: background 0.2s, border-color 0.2s, color 0.2s; }
